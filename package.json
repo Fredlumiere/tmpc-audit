@@ -1,0 +1,12 @@
+{
+  "name": "tmpc-audit",
+  "version": "1.0.0",
+  "description": "Scheduled Lighthouse audit of tmpc.org published via Cloudflare Pages",
+  "private": true,
+  "scripts": {
+    "audit": "unlighthouse-ci --site https://tmpc.org --build-static --output-path ./dist"
+  },
+  "devDependencies": {
+    "@unlighthouse/cli": "^0.17.0"
+  }
+}
